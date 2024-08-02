@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript and the Document Object Model (DOM)</title>
+    <script src="homework.js" defer></script>
+    <link rel="stylesheet" href="homework.css"> 
+</head>
+<body>
+
+    <h1>Form</h1>
+
+    <form id="nameForm" onsubmit="handleSubmit(event)">
+        <label for="fullName">Full Name: </label> 
+        <input type="text" id="fullName" name="fullName" required>
+        <br><br>
+
+        <label for="eMail">Email: </label> 
+        <input type="email" id="eMail" name="eMail" required>
+        <br><br>
+
+        <label for="message">Leave a Message</label>
+        <textarea id="message" name="message" rows="10" cols="30">Please Enter a Message...</textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="container"></div>
+
+    <div id="products"></div>
+
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div id="hoverDiv">Hover over me!</div>
+    <button id="clickButton" onclick="changeText()">Click me</button>
+
+</body>
+</html>
